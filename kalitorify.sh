@@ -279,10 +279,10 @@ setup_iptables() {
             iptables -A INPUT -i lo -j ACCEPT
 
             # Drop everything else
-            iptables -A INPUT -j DROP
+            #iptables -A INPUT -j DROP
 
             ## *filter FORWARD
-            iptables -A FORWARD -j DROP
+            #iptables -A FORWARD -j DROP
 
             ## *filter OUTPUT
             #
